@@ -6,7 +6,7 @@
 /*   By: ahamrad <ahamrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 00:19:42 by ahamrad           #+#    #+#             */
-/*   Updated: 2022/11/18 04:48:11 by ahamrad          ###   ########.fr       */
+/*   Updated: 2022/11/18 05:33:11 by ahamrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,3 @@ int	ft_printf(const char *format, ...)
 	}
 	return (count);
 }
-
-// int main()
-// {
-// 	ft_printf("%x", -10);
-// }
