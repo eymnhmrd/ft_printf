@@ -6,7 +6,7 @@
 /*   By: ahamrad <ahamrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 00:19:42 by ahamrad           #+#    #+#             */
-/*   Updated: 2022/11/18 05:33:11 by ahamrad          ###   ########.fr       */
+/*   Updated: 2022/11/21 00:00:42 by ahamrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	ft_printf(const char *format, ...)
 			if (format[i] == '%')
 				ft_putchar('%', &count);
 			if (format[i] == 'x')
-				ft_puthexa_x(va_arg(list, unsigned long), &count);
+				ft_puthexa_x(va_arg(list, unsigned int), &count);
 			if (format[i] == 'X')
-				ft_puthexa_xmaj(va_arg(list, unsigned long), &count);
+				ft_puthexa_xmaj(va_arg(list, unsigned int), &count);
 			if (format[i] == 'p')
 			{
 				ft_putstr("0x", &count);

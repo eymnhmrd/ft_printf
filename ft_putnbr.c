@@ -6,7 +6,7 @@
 /*   By: ahamrad <ahamrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 20:45:04 by ahamrad           #+#    #+#             */
-/*   Updated: 2022/11/17 22:27:54 by ahamrad          ###   ########.fr       */
+/*   Updated: 2022/11/20 23:05:40 by ahamrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ void	ft_putnbr(int n, int *count)
 	if (nbr >= 0 && nbr <= 9)
 		ft_putchar(nbr + 48, count);
 }
-
-// int main()
-// {
-// 	int count = 0;
-// 	ft_putnbr(-12345, &count);
-// 	printf("\n%d", count);
-// }
