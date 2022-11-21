@@ -6,7 +6,7 @@
 /*   By: ahamrad <ahamrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 00:19:42 by ahamrad           #+#    #+#             */
-/*   Updated: 2022/11/21 02:09:41 by ahamrad          ###   ########.fr       */
+/*   Updated: 2022/11/21 07:23:35 by ahamrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 static void	ft_check_percent(va_list list, char c, int *count)
 {
+	if (c == '%')
+		ft_putchar('%', count);
 	if (c == 'c')
 		ft_putchar(va_arg(list, int), count);
 	if (c == 's')
@@ -22,8 +24,6 @@ static void	ft_check_percent(va_list list, char c, int *count)
 		ft_putnbr(va_arg(list, int), count);
 	if (c == 'u')
 		ft_putunsigned(va_arg(list, unsigned int), count);
-	if (c == '%')
-		ft_putchar('%', count);
 	if (c == 'x')
 		ft_puthexa_x(va_arg(list, unsigned int), count);
 	if (c == 'X')

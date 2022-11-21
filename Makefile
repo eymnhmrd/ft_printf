@@ -6,7 +6,7 @@
 #    By: ahamrad <ahamrad@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/14 02:24:07 by ahamrad           #+#    #+#              #
-#    Updated: 2022/11/18 03:09:13 by ahamrad          ###   ########.fr        #
+#    Updated: 2022/11/21 02:13:12 by ahamrad          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,3 +37,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY : all clean fclean re

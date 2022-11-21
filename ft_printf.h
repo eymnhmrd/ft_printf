@@ -6,17 +6,15 @@
 /*   By: ahamrad <ahamrad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 21:36:47 by ahamrad           #+#    #+#             */
-/*   Updated: 2022/11/21 00:00:21 by ahamrad          ###   ########.fr       */
+/*   Updated: 2022/11/21 02:16:00 by ahamrad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdio.h>
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h> // remove it later 
 
 int		ft_printf(const char *format, ...);
 void	ft_putchar(char c, int *count);
